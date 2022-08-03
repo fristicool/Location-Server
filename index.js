@@ -20,7 +20,7 @@ app.post('/addlocations', (req, res) => {
         
 
         if (element.teamName === req.body.teamName) {
-            locations[i] = req.body.teamName
+            locations[i] = req.body
 
             res.send('updated')
             return
