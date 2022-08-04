@@ -9,7 +9,7 @@ app.use(cors())
 let locations = []
 
 app.get('/locations', (req, res) => {
-  res.send(locations)
+  res.send({locations: locations})
 })
 
 app.post('/addlocations', (req, res) => {
